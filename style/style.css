@@ -9,9 +9,11 @@
     box-sizing: border-box;
 }
 
+/*Body e Menu*/
 body{
     background: var(--black);
-    font-family: sans-serif;   
+    font-family: sans-serif; 
+    color: #ffffff;  
 
 }
 
@@ -20,21 +22,105 @@ header .container {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    margin-right: 10px;
 }
 
 header .logo {
-    margin-left: 5px;
-    color: var(--red);
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.8em;
+    width: 76.6px;
+    height: 25px;
+
+    margin: 5px;
+    margin-left: 30px;
+    padding: 3px;
 }
 
 header nav a {
     text-decoration: none;
     color: #AAAAAA;
     margin-right: 10px;
+    font-size: 12px;
 }
 
 header nav a:hover{
     color: #ffffff;
 }
+
+/*Filme Principal*/
+.filme-principal{
+    font-size: 16px;
+    background:linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/filme-principal.jpg');
+    
+    height: 450px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .container{
+    width: 70%;
+}
+
+
+.filme-principal .descricao{
+    width: 240px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+
+    font-size: 13px;
+    
+}
+
+.nome-filme{
+    width: 280px;
+    height: 75px;
+    margin-left: 30px;
+}
+
+.btn-assistir, .btn-mais-informacoes{
+    background-color:#ffffff;
+    color: #000000;
+    font-family: sans-serif;
+
+    border: 0;
+    margin-left: 15px;
+ 
+    padding: 10px 30px;
+    margin-right: 5px;
+    font-size: 14px;
+    
+    cursor: pointer;
+    border-radius: 4px;
+
+    text-align: center;
+    justify-content: center;
+   
+}
+
+.btn-assistir:hover,.btn-mais-informacoes:hover{
+    background-color: rgba(109,109,110,0.4);
+    transition: .3s;
+}
+
+.btn-mais-informacoes{
+    background-color: rgba(133,133,133,0.7);
+    color: #ffffff;
+}
+
+
+.btns i{
+    margin-right: 5px;
+}
+
+h5{
+    margin: 5px;
+}
+
+.box-filme{
+    width: 70%;
+    height: 70%;
+    display: block;
+}
+

@@ -5,12 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
+
+    <!--responsividade-->
+    <link rel="stylesheet" href="style/responsive.css">
+    
+    <!--OWL css-->
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
     <title>Recriando site da Netflix</title>
 </head>
 <body>
     <header>
         <div class="container">
-            <h2 class="logo">Netflix</h2>
+            <img class="logo" src="img/logo-netflix.png" alt="">
             <nav>
                 <a href="#">Inicio</a>
                 <a href="#">Séries</a>
@@ -20,6 +27,66 @@
         </div>
     </header>
 
-    
+    <main>
+       <div class="filme-principal">
+           <div class="container">
+          <img class="nome-filme" src="img/nome-filme-vf-9.png" alt="Velozes-e-Furiosos-9">
+           <p class="descricao">Dominic Toretto e sua família precisam enfrentar o seu irmão mais novo Jakob, um assassino mortal que está trabalhando com uma antiga inimiga, a cyber-terrorista Cipher.</p>
+        </div>
+        <div class="btns">
+            <button role="button" class="btn-assistir">
+                <p><i class="fas fa-play"></i>
+                    <strong>Assistir</strong></p>
+            </button>
+            <button role="button" class="btn-mais-informacoes">
+                <p><i class="fas fa-info-circle"></i>
+                    <strong>Mais informações</strong></p>
+            </button>
+        </div>
+       </div>
+    </main>
+
+    <div class="carrosel-filmes">
+        <h5>Em alta</h5>
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img class="box-filme" src="img/carrosel-img/mini01.jpg" alt="Os-Simpsons">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/carrosel-img/mini02.jpg"alt="Riverdale">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/carrosel-img/mini03.jpg" alt="Major-grom">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/carrosel-img/mini04.jpg" alt="Peaky-blinders">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/carrosel-img/mini05.jpg" alt="Dynasty-Warriors">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/carrosel-img/mini06.jpg" alt="Diários-de-um-Vampiro">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/carrosel-img/mini07.jpg"alt="Falcão-e-o-Soldado-Invernal">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/carrosel-img/mini08.jpg" alt="Mortal-Kombat">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/carrosel-img/mini09.jpg" alt="Viuva-Negra">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/carrosel-img/mini10.jpg" alt="Lucifer">
+            </div>
+            
+        </div>
+    </div>
+
+
+    <script src="https://kit.fontawesome.com/f9183c0e19.js" crossorigin="anonymous"></script>
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/setup.js"></script>
 </body>
 </html>
